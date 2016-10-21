@@ -10,10 +10,10 @@
 
     
    
-    
-    <mvc:annotation-driven />
-    
+    <mvc:resources mapping="/webjars/**" location="/webjars/"/>
    
+    
+   <mvc:default-servlet-handler/>
     
      <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -25,4 +25,5 @@
         </property>
     </bean>
 
+      <mvc:annotation-driven />
 </beans>
